@@ -11,7 +11,7 @@ const { erc20ABI, factoryABI, pairABI, routerABI } = require("./AbiList");
 
 // Standard Provider
 const provider = new ethers.providers.JsonRpcProvider(
-  "https://eth-sepolia.g.alchemy.com/v2/rjF3-niNJSvwMLGDPXLnBfMrzY3G94st"
+  "https://bsc-dataseed.binance.org/"
 );
 
 // Connect to Factory
@@ -51,5 +51,5 @@ const getPrices = async (amountInHuman) => {
   console.log(amountOutHuman);
 };
 
-const amountInHuman = "1";
+const amountInHuman = "500";
 getPrices(amountInHuman);
