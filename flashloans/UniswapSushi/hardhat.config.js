@@ -27,22 +27,19 @@ module.exports = {
   networks: {
     hardhat: {
       forking: {
-        url: "https://eth-mainnet.g.alchemy.com/v2/3hd9Izfl4SLczdTYWInRZ_9Khn0VOBp4",
+        url: "https://bsc-dataseed.binance.org/",
       },
     },
     testnet: {
-      url: "https://eth-sepolia.g.alchemy.com/v2/rjF3-niNJSvwMLGDPXLnBfMrzY3G94st",
-      chainId: 11155111,
+      url: "https://data-seed-prebsc-1-s1.binance.org:8545/",
+      chainId: 97,
       accounts: [
-        "0x2be69d08f2982e5f66221cb7ed30a3b6a79364e632c36fb2ca9d8a269833fae4",
+        "0x + YOUR PRIVATE KEY", // private key (Metamask / Binance ) (p.p.s. put 0x before the private key)
       ],
     },
     mainnet: {
-      url: "https://eth-mainnet.g.alchemy.com/v2/3hd9Izfl4SLczdTYWInRZ_9Khn0VOBp4",
-      chainId: 1,
-      accounts: [
-        "0x59c6995e998f97a5a0044966f0945389dc9e86dae88c7a8412f4603b6b78690d", // This one is fake, change for your real one
-      ],
+      url: "https://bsc-dataseed.binance.org/",
+      chainId: 56,
     },
   },
 };
